@@ -1,0 +1,45 @@
+<div class="container">
+
+  <div>
+    <acme-navbar ></acme-navbar>
+  </div>
+
+
+  <div class="row">
+	  	<div class="col-md-2">
+			<button ng-click="products.GetProducts()">Carregar produtos </button>
+	  	</div>
+
+	  	<div class="col-md-10" ng-if="products.Product.Nome && products.Product.Descricao">
+	  		<label>Nome: </label>{{products.Product.Nome}} <br>
+	  		<label>Descrição: </label>{{products.Product.Descricao}}
+
+	  </div>
+
+  </div>
+  
+  
+
+  <div class="text-center tabela-conteudo">
+
+	<table class="table table-bordered" ng-show="products.Products.length">
+	    <thead>
+	    <tr>
+	        <th>Id</th>
+	        <th>Nome</th>
+	        <th>Descrição</th>
+	        <th>Preço</th>
+	    </tr>
+	    </thead>
+	    <tbody>
+	    <tr ng-repeat="Product in products.Products track by $index" ng-click="products.showProduct(Product)">
+	        <td class="filterable-cell">{{Product._id}}</td>
+	        <td class="filterable-cell">{{Product.Nome}}</td>
+	        <td class="filterable-cell">{{Product.Descricao}}</td>
+	        <td class="filterable-cell">{{Product.Preco|currency}}</td>
+	    </tr>
+	    
+    </tbody>
+  </div>
+
+</div>

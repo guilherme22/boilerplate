@@ -1,0 +1,26 @@
+[
+	{
+		"Nome": "Coca-Cola 600 ml",
+  		"Descricao": "Produto da coca cola de 600 ml",
+  		"Preco": 4.5
+	},
+	{
+		"Nome": "X-Burguer",
+  		"Descricao": "Produto composto de Queijo, Hamburguer, Pão, Maionese",
+  		"Preco": 8.5
+  	},{
+		"Nome": "X-Bacon",
+  		"Descricao": "Produto composto de Queijo, Hamburguer, Pão, Maionese, Bacon",
+  		"Preco": 9.5
+  	},
+  	{
+		"Nome": "X-Tudo",
+  		"Descricao": "Produto composto de Queijo, Hamburguer, Pão, Maionese, Bacon, Presunto, Frango, Salsicha",
+  		"Preco": 13.5
+  	},
+  	{
+		"Nome": "Guaraná Antartica Lata 350ML",
+  		"Descricao": "Refrigerante lata Antartica",
+  		"Preco": 3
+  	}
+]
